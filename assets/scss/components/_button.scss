@@ -1,0 +1,28 @@
+.btn {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+}
+
+.btn-primary {
+  background: $primary;
+  border: solid 2px transparent;
+  color: $light;
+  &:hover {
+    border: solid 2px $primary;
+    background: none;
+    color: $primary;
+  }
+}
+
+.btn-dark {
+  border: solid 1px transparent;
+  color: $light;
+  background: $dark;
+  &:hover {
+    opacity: 0.8;
+  }
+}

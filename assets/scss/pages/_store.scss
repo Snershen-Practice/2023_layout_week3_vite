@@ -1,0 +1,59 @@
+.store-all {
+  .store-list-item {
+    width: calc(33.3333% - 12px);
+    @include pad {
+      width: calc(50% - 12px);
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.store-single-wrapper {
+  display: flex;
+  justify-content: space-between;
+  @include pad {
+    flex-direction: column;
+  }
+}
+
+.store-single {
+  width: calc(42.5% - 12px);
+  @include pad {
+    width: 100%;
+  }
+  .store-list-item {
+    @include pad {
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: calc(50% - 12px);
+      }
+      .store-card-body {
+        width: calc(50% - 12px);
+      }
+    }
+    @include mobile {
+      display: block;
+      img {
+        width: 100%;
+      }
+      .store-card-body {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.sitemap {
+  width: calc(57.5% - 12px);
+  @include pad {
+    width: 100%;
+    height: 414px;
+  }
+  @include mobile {
+    width: 100%;
+    height: 208px;
+  }
+}

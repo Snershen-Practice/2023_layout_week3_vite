@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GLASSES｜門市據點</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="container py-8 py-sm-7 mt-4">
+      <h2 class="inpage-title fs-2 fs-sm-6 fw-bold mb-6">門市據點</h2>
+      <div class="store-search mb-7">
+        <label for="area" class="fs-6 me-4">選擇分店</label>
+        <select id="area" class="fs-8">
+          <option value="TPE">台北中山旗艦店</option>
+        </select>
+      </div>
+      <div class="store-single-wrapper">
+        <div class="store-list store-single">
+          <div class="store-list-item mb-md-5">
+            <img src="../assets/images/store-1.png" alt="" />
+            <div class="store-card-body">
+              <h3 class="store-title fs-6 py-2 px-5">台北中山旗艦店</h3>
+              <ul class="store-desc py-4 px-5">
+                <li class="store-desc-item mb-2">
+                  <span class="material-symbols-outlined me-3"> call </span>
+                  <a href="tel:+886-2-0001234">電話：(02)000-1234</a>
+                </li>
+                <li class="store-desc-item mb-2">
+                  <span class="material-symbols-outlined me-3"> schedule </span>
+                  <span>營業時間：10:00-21:00</span>
+                </li>
+                <li class="store-desc-item">
+                  <span class="material-symbols-outlined me-3"> location_on </span>
+                  <span>地址：台北市中山區南京東路25巷2-1號</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="sitemap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4361551738743!2d121.51800961500675!3d25.053202183963382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aec3e702a329%3A0x7737024bf6c4a9b1!2sTamsui-Xinyi%20Line!5e0!3m2!1szh-TW!2stw!4v1687681358629!5m2!1szh-TW!2stw"
+            style="border: 0"
+            width="100%"
+            height="100%"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

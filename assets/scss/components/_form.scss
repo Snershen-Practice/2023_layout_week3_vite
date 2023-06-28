@@ -1,0 +1,19 @@
+textarea {
+  resize: none;
+}
+
+label {
+  display: inline-block;
+}
+
+.input {
+  padding: 6px 12px;
+  width: 100%;
+  border: solid 1px $dark;
+  outline: none;
+  background: none;
+  line-height: 1.5;
+  &::placeholder {
+    color: rgba($dark, 0.2);
+  }
+}

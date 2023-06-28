@@ -1,0 +1,23 @@
+.optical-product {
+  .product-item {
+    width: calc(25% - 12px);
+    @include pad {
+      width: calc(50% - 12px);
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.sunglasses-product {
+  .product-item {
+    width: calc(33.33333% - 12px);
+    @include pad {
+      width: calc(50% - 12px);
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
